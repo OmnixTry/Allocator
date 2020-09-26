@@ -207,7 +207,12 @@ void mem_dump()
 int main()
 {
 	PTR = block(SIZE);
+	mem_dump();
 	void* x1 = mem_alloc(1);
+	mem_dump();
+	mem_realloc(x1, 10);
+	mem_dump();
+	mem_free(x1);
 	mem_dump();
 	void* x2 = mem_alloc(1);
 	mem_dump();
