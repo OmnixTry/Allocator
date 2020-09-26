@@ -28,7 +28,7 @@ to the new block. The old block data is deleted, the `mem_free` is called with t
 #### `void mem_free(void* addr)` function
 The function deletes the data of the block, flags it as the 'free memory' block and tries to merge with adjacent 'free memory' blocks, if present.
 
-##Use
+## Use
 #### Create block with default size - 800bytes of memory (8 bytes are immediately taken for the header)
 ##### Code
 ```  
